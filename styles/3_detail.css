@@ -506,8 +506,8 @@ p, h4 {
   font-size: 17px;
   max-width: 750px;
   line-height: 1.8;
-  padding-left: 15px; /* ✅ 초록색 선과 같은 정렬 유지 */
-  margin-left: 10px; /* ✅ 내용이 너무 왼쪽으로 붙지 않도록 */
+  padding-left: 15px; /* 초록색 선과 같은 정렬 유지 */
+  margin-left: 10px; /* 내용이 너무 왼쪽으로 붙지 않도록 */
 }
 
 /***** "Go Back" 버튼 스타일 *****/

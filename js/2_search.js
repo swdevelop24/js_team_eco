@@ -238,7 +238,7 @@ function filterParks() {
     displayParks();
 }
 
-// 🔹 공원 리스트 렌더링 (하트 상태 반영)
+// 공원 리스트 렌더링 (하트 상태 반영)
 function displayParks() {
     favorites = JSON.parse(localStorage.getItem('favorites')) || []; // 최신 상태 유지
 
@@ -268,7 +268,7 @@ function displayParks() {
     document.getElementById('nextPage').disabled = currentPage >= totalPages;
 }
 
-// 🔹 페이지 이동
+// 페이지 이동
 function nextPage() {
     let totalPages = Math.min(maxPages, Math.ceil(filteredParks.length / parksPerPage));
     if (currentPage < totalPages) {

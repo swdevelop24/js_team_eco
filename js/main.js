@@ -11,7 +11,7 @@ async function fetchParkImages() {
     try {
         const response = await fetch(API_URL);
         const data = await response.json();
-        // 🔹 이미지가 있는 공원만 필터링하여 리스트에 추가
+        //  이미지가 있는 공원만 필터링하여 리스트에 추가
         imageUrls = data.data
             .flatMap(park => park.images.map(img => img.url))
             .filter(url => url);
@@ -49,7 +49,7 @@ function preloadImages(urls) {
 
 function updateBackground() {
     if (imageUrls.length > 0) {
-        // 🔹 배경색은 그대로 두고, 배경 이미지만 자연스럽게 변경
+        // 배경색은 그대로 두고, 배경 이미지만 자연스럽게 변경
         document.body.style.transition = "background-image 1s ease-in-out";
         document.body.style.backgroundImage = `url(${imageUrls[currentIndex]})`;
         
